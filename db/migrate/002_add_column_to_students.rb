@@ -1,1 +1,5 @@
-002_add_column_to_students.rb
+class AddColumnToStudents < ActiveRecord::Migration
+  def change
+    add_column :students, :active, :boolean, default: false
+  end
+end
